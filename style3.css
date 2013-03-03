@@ -43,34 +43,10 @@ h2 {
   margin-top: 20px;
 }
 
-.profile-pic {
- height: 350px;
-/* width: 350px;*/
- margin: 20px 0 20px 200px;
-
-}
-
 nav li:hover {
   color: #FF3100;
 }
 
-.container {
-  float: right;
-  height: 350px;
-  color: #A1A1A1;
-  width: 650px;
-}
-
-section p {
-  font-family: 'PT Serif Caption', serif;
-  margin: 20px 150px 20px 0;
-  font-size: 30px;
-  text-align: left;
-}
-
-.clear {
-  clear: both;
-}
 
 footer {
   background-color: #E8E8E8;
