@@ -1,37 +1,61 @@
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  *zoom: 1;
+}
+
 header {
   background-color: #E8E8E8;
-  position: relative;
 }
 
 h1 {
   text-align: left;
   word-spacing: 10px;
-}
-
-h1 {
   color: #FF3100;
   font-size: 50px;
   font-family: 'Pacifico', cursive;
   padding: 20px 0 30px 0;
+  width: 50%;
 }
 
-nav {
-  position: absolute;
-  top: 30px;
-  right: 30px;
+.me {
+  float: left;
+}
+
+nav ul {
+  float: right;
+  width: 50%;
+  padding: 20px 0 30px 0;
+  text-align: right;
 }
 
 nav li {
-  float: left;
+  display: inline-block;
   padding: 10px;
+  border: 1px solid black;
+  background-color: #80CCB8;
+  border-radius: 12px;
+  margin: .8333333333%;
+}
+
+nav li:hover {
+  color: #FF3100;
+}
+
+nav li a {
+  text-decoration: none;
   color: #FFF;
   font-size: 15px;
   font-weight: bolder;
   font-family: 'Codystar', cursive;
-  border: 1px solid black;
-  background-color: #80CCB8;
-  border-radius: 12px;
-  margin: 8px;
 }
 
 h2 {
@@ -43,22 +67,22 @@ h2 {
   margin-top: 20px;
 }
 
-.profile-pic {
- height: 350px;
-/* width: 350px;*/
- margin: 20px 0 20px 200px;
-
+figure {
+  width: 50%;
+  float: left;
 }
 
-nav li:hover {
-  color: #FF3100;
+.profile-pic {
+ width: 100%;
+ max-width: 300px;
+ margin: 20px auto;
+ display: block;
 }
 
 .container {
   float: right;
-  height: 350px;
   color: #A1A1A1;
-  width: 650px;
+  width: 50%;
 }
 
 section p {
@@ -75,19 +99,14 @@ section p {
 footer {
   background-color: #E8E8E8;
   width: 100%;
-  height: 100px;
   padding-bottom: 20px;
 }
 
-footer p {
+.contact-me {
   text-align: center;
   padding: 10px 0;
   font-size: 35px;
   color: #FF3100;
-}
-
-footer ul {
-  margin-left: 30%;
 }
 
 footer ul img {
@@ -100,14 +119,84 @@ footer ul img {
 
 .contact {
   float: left;
-  margin: 0 20px;
   font-size: 27px;
   color: #80CCB8;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
+
+.social-icons {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.social-icons li {
+    float: left;
+    width: 33.333333333%;
+  }
+
+  .social-icons li a {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+  }
 
 footer p, .contact {
   font-family: 'Pacifico', cursive;
 }
+
+@media all and (max-width: 386px) {
+  .me {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    width: 100%;
+    display: block;
+    text-align: center;
+   }
+
+}
+
+@media all and (max-width: 592px) {
+  h1, nav ul {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 625px) {
+  .container, figure {
+    width: 100%;
+  }
+
+  .profile-pic {
+    /*margin: 5% auto;*/
+    display: block;
+    width: 100%;
+  }
+
+  .container {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .container p {
+    width: 90%;
+    padding: 0 5%;
+  }
+
+}
+
+
+
+
 
 
 

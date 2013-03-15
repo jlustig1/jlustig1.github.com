@@ -9,7 +9,7 @@ h1, h2 {
 
 h1 {
   color: #FF3100;
-  font-size: 100px;
+  font-size: 71px;
   font-family: 'Pacifico', cursive;
   padding: 40px 0;
   word-spacing: 15px;
@@ -41,4 +41,12 @@ h2 {
 
 .submit-button:hover {
   color: #FF3100;
+}
+
+@media all and (max-width: 385px) {
+  h1 {
+    display: block;
+    width: 100%;
+    font-size: 63px;
+  }
 }
